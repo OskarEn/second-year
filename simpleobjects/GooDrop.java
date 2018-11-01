@@ -15,7 +15,7 @@ class GooDrop extends Goo {
         int ypos = 0;
         int xvel = 0;
         int yvel = 1;
-        int size = 10;
+        int size = 50;
 
         drop = new SimpleDrop(xpos, ypos, xvel, yvel, size);
     }

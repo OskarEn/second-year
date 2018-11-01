@@ -19,7 +19,7 @@ class SimpleDrop {
     //Can use a Graphics objects and use its methods for my drawing puropses
     public void draw(Graphics g) {
 
-        g.setColor(Color.GRAY);
+        g.setColor(Color.RED);
         g.fillOval(xpos, ypos, size, size); //fillOval uses height and width to compute
     }
 
