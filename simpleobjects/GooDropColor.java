@@ -5,7 +5,7 @@ import java.awt.Graphics;
 
 class GooDropColor extends Goo {
 
-    Drop drop;
+    Drop bDrop;
 
     public GooDropColor (int width, int height) {
 
@@ -17,12 +17,12 @@ class GooDropColor extends Goo {
         int yvel = 2;
         int size = 30;
 
-        drop = new BlueDrop(xpos, ypos, xvel, yvel, size);
+        bDrop = new BlueDrop(xpos, ypos, xvel, yvel, size);
     }
 
     public void draw(Graphics g) {
 
-        drop.move(getWidth(), getHeight());
-        drop.draw(g);
+        bDrop.move(getWidth(), getHeight());
+        bDrop.draw(g);
     }
 }

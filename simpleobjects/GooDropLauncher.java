@@ -7,12 +7,16 @@ public class GooDropLauncher {
         int width = 800;
         int height = 500;
 
+//        GooDropColor gdc = new GooDropColor(width, height);
+//        gdc.smooth();
+//        gdc.go();
+//
 //        GooDrop gd = new GooDrop(width, height);
 //        gd.smooth();
 //        gd.go();
 
-        GooDropColor gdc = new GooDropColor(width, height);
-        gdc.smooth();
-        gdc.go();
+        GooDropWobbly ms = new GooDropWobbly(height, width);
+        ms.smooth();
+        ms.go();
     }
 }
