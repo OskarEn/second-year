@@ -3,11 +3,11 @@ package simpleobjects;
 import goo.Goo;
 import java.awt.Graphics;
 
-class GooDrop {
+class GooDrop extends Goo {
 
     SimpleDrop drop;
 
-    public GooDrop extends Goo (int width, int height) {
+    public GooDrop (int width, int height) {
 
         super(width, height);
 
@@ -21,7 +21,7 @@ class GooDrop {
     }
 
     //Overriding the draw method. GooDrop relays the message to the SimpleDrop object. The Grapohics reference is
-    //passed as a paramter
+    //passed as a parameter to the SimpleDrop's drwa
     public void draw(Graphics g) {
 
         drop.move(getWidth(), getHeight());
