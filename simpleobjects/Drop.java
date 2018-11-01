@@ -3,11 +3,11 @@ package simpleobjects;
 import java.awt.Color;
 import java.awt.Graphics;
 
-class SimpleDrop {
+class Drop {
 
     int xpos, ypos, xvel, yvel, size;
 
-    public SimpleDrop(int xp, int yp, int xv, int yv, int si) {
+    public Drop(int xp, int yp, int xv, int yv, int si) {
 
         xpos = xp;
         ypos = yp;
@@ -28,5 +28,11 @@ class SimpleDrop {
 
         xpos = xpos + xvel;
         ypos = ypos + yvel;
+
+        if (ypos > height) {
+
+            ypos = 0;
+            xpos = (int) (Math.random() * width);
+        }
     }
 }

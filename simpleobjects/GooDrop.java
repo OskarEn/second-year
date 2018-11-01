@@ -5,7 +5,7 @@ import java.awt.Graphics;
 
 class GooDrop extends Goo {
 
-    SimpleDrop drop;
+    Drop drop;
 
     public GooDrop (int width, int height) {
 
@@ -17,7 +17,7 @@ class GooDrop extends Goo {
         int yvel = 1;
         int size = 50;
 
-        drop = new SimpleDrop(xpos, ypos, xvel, yvel, size);
+        drop = new Drop(xpos, ypos, xvel, yvel, size);
     }
 
     //Overriding the draw method. GooDrop relays the message to the SimpleDrop object. The Grapohics reference is
